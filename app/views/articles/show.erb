@@ -1,0 +1,17 @@
+<div class="container">
+ <h2><%=@article.title%></h2>
+ </br>
+ <h3>Description: <%=@article.description%></h3>
+ <h3>Email me on: <%=@article.email%></h3>
+ <h3>Price: $<%=@article.price%>.00</h3>
+ </br>
+ <h3><a href="/categories/<%=@category.id%>/articles">Back to <%=@category.name%> </a></h3>
+ </br>
+ <h3>Use this link to edit the article<h3>
+ <h3>
+  <a href ="/categories/<%=@category.id%>/articles/<%=@article.id%>/edit">
+    /categories/<%=@category.id%>/articles/<%=@article.id%>/edit?key=<%=@article.key%>
+  </a>
+ </h3>
+
+</div>

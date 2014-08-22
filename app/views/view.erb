@@ -1,0 +1,13 @@
+<div class="container">
+  <table>
+    <h2>Categories</h2>
+  </br>
+    <ol>
+      <%@category.each do |item|%>
+        <li>
+          <a href="/categories/<%=item.id%>"><%=item.name%></a>
+        </li>
+      <%end%>
+    </ol>
+  </table>
+</div>

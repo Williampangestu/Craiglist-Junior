@@ -1,0 +1,23 @@
+<div class="container">
+  <table>
+
+  <h3>Create New Article</h3>
+
+    <form action="/categories/<%=@category.id%>/articles/new" method="post">
+      Title: <input type="text" name="title" placeholder="Article title">
+      </br>
+      </br>
+      Description: <input type="text" name="description" placeholder="Article description">
+      </br>
+      </br>
+      Email: <input type="text" name="email" placeholder="Your email address">
+      </br>
+      </br>
+      Price: <input type="text" name="price" placeholder="Article price">
+      </br>
+      </br>
+      <input type="submit" value="submit">
+    </form>
+
+  </table>
+</div>

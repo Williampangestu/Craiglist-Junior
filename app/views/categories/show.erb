@@ -1,0 +1,17 @@
+<div class="container">
+  <table>
+    <h2><%=@category.name%></h2>
+    </br>
+    <ol>
+      <%@article.each do |article|%>
+        <li>
+          <a href = "/categories/<%=@category.id%>/articles/<%=article.id%>"><%=article.title%></a>
+        </li>
+      <%end%>
+    </ol>
+    </br>
+
+    <h3><a href="/categories/<%=@category.id%>/articles/new">Create New Article in This Category</a></h3>
+
+  </table>
+</div>
